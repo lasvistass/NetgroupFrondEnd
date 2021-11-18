@@ -1,0 +1,18 @@
+<table>
+    <thead>
+      <tr>
+        <th>ID Articolo</th>
+        <th>Nome Articolo</th>
+        <th>Prezzo Articolo</th>
+      </tr>
+    </thead>
+
+
+    <tbody>
+      <tr *ngFor="let articolo of articoli">
+          <td>{{articolo.idArticolo}}</td>
+          <td>{{articolo.nome}}</td>
+          <td>{{articolo.prezzo}}</td>
+      </tr>
+    </tbody>
+  </table>
