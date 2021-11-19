@@ -6,11 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ArticoloComponent } from './articolo/articolo.component';
 import { ArticoloDataService } from './articolo/articolo-data.service';
+import { ArticoloNPComponent } from './articolo-np/articolo-np.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ArticoloComponent
+    ArticoloComponent,
+    ArticoloNPComponent
   ],
   imports: [
     BrowserModule,

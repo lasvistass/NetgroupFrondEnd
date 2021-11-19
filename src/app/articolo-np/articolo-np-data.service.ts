@@ -9,7 +9,7 @@ export class ArticoloDataService{
 
     constructor(private httpClient:HttpClient){}
 
-    getArticolo(){
-        return this.httpClient.get<Articolo[]>('http://localhost:8090/api/articolo/Articoli');
+    getArticoloNP(){
+        return this.httpClient.get<Articolo[]>('http://localhost:8090/api/articolo/ArticoloNP');
     }
 }
