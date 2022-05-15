@@ -7,19 +7,23 @@ import { AppComponent } from './app.component';
 import { ArticoloComponent } from './articolo/articolo.component';
 import { ArticoloDataService } from './articolo/articolo-data.service';
 import { ArticoloNPComponent } from './articolo-np/articolo-np.component';
+import { UserComponent } from './user/user.component';
+import { UserDataService } from './user/user-data.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     ArticoloComponent,
-    ArticoloNPComponent
+    ArticoloNPComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [ArticoloDataService],
+  
+  providers: [ArticoloDataService, UserDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
